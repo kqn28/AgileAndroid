@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:text="@string/summary_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp" />
+    <EditText
+        android:hint="@string/summary_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/summary" />
+    <TextView
+        android:text="@string/criteria_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp" />
+    <EditText
+        android:hint="@string/criteria_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/criteria" />
+    <TextView
+        android:text="@string/points_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp" />
+    <EditText
+        android:hint="@string/points_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:id="@+id/points" />
+    <TextView
+        android:text="@string/priority_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/radio_group" >
+        <RadioButton
+            android:text="@string/radio_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio_current" />
+        <RadioButton
+            android:text="@string/radio_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio_next" />
+        <RadioButton
+            android:text="@string/radio_later"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio_later"
+            android:checked="true"/>
+    </RadioGroup>
+    <TextView
+        android:text="@string/status_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp" />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner" />
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="@string/save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:id="@+id/save_story_button" />
+        <Button
+            android:text="@string/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancel_story_button" />
+    </LinearLayout>>
+</LinearLayout>
+</ScrollView>
